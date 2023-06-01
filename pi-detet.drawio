@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net" modified="2023-04-13T12:43:41.627Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="dyoaZA_ZEbO30dNpiSzN" version="21.1.7" type="device">
+  <diagram name="Página-1" id="tfSqzaNrn0mltbFerCB9">
+    <mxGraphModel dx="1434" dy="739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="14xW07rJoBwTR5ovtPe9-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-1" target="14xW07rJoBwTR5ovtPe9-26" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-1" value="Início" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="170" y="10" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-2" value="Fim" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="155" y="1030" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.45;entryY=0.217;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-3" target="14xW07rJoBwTR5ovtPe9-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-3" value="Digite seu nome para jogar" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="165" y="200" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-4" target="14xW07rJoBwTR5ovtPe9-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-4" value="jogador" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;" parent="1" vertex="1">
+          <mxGeometry x="175" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.572;entryY=-0.027;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-7" target="14xW07rJoBwTR5ovtPe9-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="225" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-7" value="culpado, suspeitos, armas&lt;br&gt;locais" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="120" y="360" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.541;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-9" target="14xW07rJoBwTR5ovtPe9-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-9" value="Encontre o culpado&lt;br&gt;&amp;nbsp;pelo crime:&lt;br&gt;&lt;br&gt;Exibir: suspeitos, armas,&lt;br&gt;locais" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="125" y="460" width="175" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0.2;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-11" target="14xW07rJoBwTR5ovtPe9-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-11" value="Dê seu palpite:&lt;br&gt;Quem matou?&lt;br&gt;Com qual arma?&lt;br&gt;Onde?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="120" y="590" width="170" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-13" target="14xW07rJoBwTR5ovtPe9-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-13" value="palpite" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;" parent="1" vertex="1">
+          <mxGeometry x="155" y="710" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-15" target="14xW07rJoBwTR5ovtPe9-17" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="850" />
+              <mxPoint x="60" y="950" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-19" value="Sim" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14xW07rJoBwTR5ovtPe9-18" vertex="1" connectable="0">
+          <mxGeometry x="-0.7515" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-15" target="14xW07rJoBwTR5ovtPe9-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="470" y="850" />
+              <mxPoint x="470" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-22" value="Não" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="14xW07rJoBwTR5ovtPe9-21" vertex="1" connectable="0">
+          <mxGeometry x="-0.8535" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-15" value="palpite = suspeito?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="100" y="800" width="210" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="4WQuwNfMAQmekKCUv7Qa-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-17" target="14xW07rJoBwTR5ovtPe9-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-17" value="Parabéns, acertou!" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="10" y="950" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14xW07rJoBwTR5ovtPe9-26" target="14xW07rJoBwTR5ovtPe9-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="14xW07rJoBwTR5ovtPe9-26" value="Bem vindo ao jogo Detetive" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="170" y="110" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="4WQuwNfMAQmekKCUv7Qa-2" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Amanda Santos&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/span&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Caroline Ghidotti&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Giancarlo&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Marques&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Leonard&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;o Cesario&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Rafael Carrenho&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Raissa Casilla&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=middle;spacing=0;spacingLeft=-35;" parent="1" vertex="1">
+          <mxGeometry x="510" y="25" width="190" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
