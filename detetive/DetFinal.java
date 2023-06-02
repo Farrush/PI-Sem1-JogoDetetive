@@ -1,5 +1,5 @@
 /***********************************************************************************************************************
- * Nome do Programa: Jogo Detetive
+ *  Nome do Programa: Jogo Detetive
  * 	Autores:
  *  Caroline Ghidotti
  *  Giancarlo Marques
