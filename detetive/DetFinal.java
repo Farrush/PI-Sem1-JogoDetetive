@@ -8,7 +8,7 @@
  *  Raissa Casilla
  *
  *	Versão: 1.0
- *	Última modificação: 01/06/2023
+ *	Última modificação: 05/06/2023
  ***********************************************************************************************************************/
 package detetive;
 
@@ -16,6 +16,10 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class DetFinal {
+	// Variáveis de cores do console
+	static final String ANSI_RESET = "\u001B[0m";
+	static final String ANSI_RED = "\u001B[31m";
+	static final String ANSI_GREEN = "\u001B[32m";
 
 	// Arrays com os dados do jogo
 	static String[] suspeitos = { "Sargento", "Florista", "Chefe de Cozinha", "Mordomo", "Médico", "Dançarina",
@@ -28,23 +32,30 @@ public class DetFinal {
 
 	// Variáveis que guardam todos os palpites que o jogador tentou
 	// palpites de suspeito
+	// Motivo: no método que exibe as listas do jogo, em cada elemento do vetor, ocorre uma verificação
+	// baseada no método "Contain" da classe String, verifica se o jogador já tentou aquela opção
+	// em uma sintaxe parecida com SE TentativasSus CONTÉM elementoDoVetor
 	static String tentativasSus = "";
 	// palpites de arma
 	static String tentativasArm = "";
 	// palpites de local
 	static String tentativasLoc = "";
 	
+	
 	// Array que guarda o palpite do jogador nas rodadas
 	static String[] palpite = new String[3];
 	
 	// Guarda o menor número de rodadas que o jogador vencer
 	static String[] melhorPontuacao = {"n/a","0"};
-	
-	static String[][] scoreboard = new String[5][2];
 
 	static String[] culpado = new String[3];
 
 	static Scanner teclado = new Scanner(System.in);
+	// Nome do jogador
+	static String jogador;
+	
+	static int rodada = 0;
+
 
 	public static void main(String[] args) {
 		
@@ -58,10 +69,6 @@ public class DetFinal {
 	 * Inicia o jogo
 	 */
 	static void iniciaJogo() {
-		// Nome do jogador
-		String jogador;
-
-		int rodada = 0;
 
 		// o Culpado é definido quando o jogo inicia, selecionando um suspeito, arma
 		// e local aleatório
@@ -93,6 +100,8 @@ public class DetFinal {
 				indice = teclado.nextInt() - 1;
 			} while (indice > 7 || indice < 0);
 			
+			// Determina o valor da primeira posição do vetor de palpites como o 
+			// Suspeito escolhido pelo jogador
 			palpite[0] = suspeitos[indice];
 			
 			// Salva o palpite de suspeito da rodada na variável que guarda todos os
@@ -104,6 +113,8 @@ public class DetFinal {
 				indice = teclado.nextInt() - 1;
 			} while (indice > 7 || indice < 0);
 			
+			// Determina o valor da segunda posição do vetor de palpites como a
+			// Arma escolhida pelo jogador
 			palpite[1] = armas[indice];
 			
 			// salva o palpite de arma
@@ -114,6 +125,8 @@ public class DetFinal {
 				indice = teclado.nextInt() - 1;
 			} while (indice > 7 || indice < 0);
 			
+			// Determina o valor da terceira posição do vetor de palpites como o 
+			// Local escolhido pelo jogador
 			palpite[2] = locais[indice];
 			
 			// salva o palpite de local
@@ -121,14 +134,15 @@ public class DetFinal {
 
 			// Se o jogador acertar os três, o loop acaba e aparece uma mensagem de fim de
 			// jogo
-			if (palpite[0].equals(culpado[0]) && palpite[1].equals(culpado[1]) && palpite[2].equals(culpado[2])) {
+			if (verificaPalpite()) {
 				aoVencer(jogador, rodada);
 
 				break;
 				// Se não, o loop continua até ele acertar
 			} else {
-				System.out.println("\nVocê errou!\nTente novamente.");
-
+				System.out.println("-----------------------------------------------------------------");
+				System.out.println(""+ANSI_RED+"Você errou!"+ANSI_RESET+"\nTente novamente.");
+				System.out.println("-----------------------------------------------------------------");
 			}
 
 		}
@@ -144,7 +158,7 @@ public class DetFinal {
 		}
 	}
 	/**
-	 * Exibe o menu do inicial
+	 * Exibe o menu inicial
 	 */
 	static void exibeMenu() {
 		System.out.println("Digite\n1 - Jogar\n2 - Ver Pontuação\n3 - Sair");
@@ -171,14 +185,11 @@ public class DetFinal {
 	 * @param local Lista de locais
 	 */
 	static void exibirListas(String[] susp, String[] arma, String[] local) {
-		// Variáveis de cores do console
-		final String ANSI_RESET = "\u001B[0m";
-		final String ANSI_RED = "\u001B[31m";
-		final String ANSI_GREEN = "\u001B[32m";
 
-		System.out.print("  Lista de suspeitos   ");
-		System.out.print("  Lista de armas   ");
-		System.out.print("  Lista de locais\n");
+
+		System.out.print("==Lista de suspeitos===");
+		System.out.print("==Lista de armas===");
+		System.out.print("==Lista de locais===\n");
 
 		// Este laço serve para navegar por todos os elementos dos arrays de dados do
 		// jogo, e exibe cada um
@@ -217,17 +228,23 @@ public class DetFinal {
 			System.out.println("");
 
 		}
+		System.out.println("==============================================================");
 	}
 	/**
 	 * Limpa todas as variáveis relevantes para reiniciar o jogo
 	 */
 	static void limparVariaveis() {
+		rodada = 0;
+		jogador = "";
 		tentativasArm = "";
 		tentativasLoc = "";
 		tentativasSus = "";
 		palpite[0] = "";
 		palpite[1] = "";
 		palpite[2] = "";
+		culpado[0] = "";
+		culpado[1] = "";
+		culpado[2] = "";
 	}
 	/**
 	 * Mostra informações a respeito do último jogador que venceu em menor número de tentativas
@@ -258,5 +275,17 @@ public class DetFinal {
 			melhorPontuacao[1] = Integer.toString(rodada);
 		}
 		limparVariaveis();
+	}
+	/**
+	 * Verifica se o palpite do jogador na rodada atual é exatamente igual ao culpado definido na partida
+	 * 
+	 * @return true se o palpite for igual ao culpado
+	 */
+	static boolean verificaPalpite() {
+		boolean resultado = false;
+		if(palpite[0].equals(culpado[0]) && palpite[1].equals(culpado[1]) && palpite[2].equals(culpado[2])) {
+			resultado = true;
+		}
+		return resultado;
 	}
 }
